@@ -64,15 +64,15 @@ def another_function(x):
     """Another decorated function"""
     return x + x
 ```
-* The @ symbol to apply decorators to functions
+* Use the @ symbol to apply decorators to functions
 * Decorators can enhance maintainbility, readability, and scalability of designs
-* Decorators can be any kind of callable object (functions, class objects and class instances)
+* Decorators can be any kind of callable object (e.g., functions, class objects, class instances, etc.)
 * The `__name__` and `__doc__` attributes of decorated functions are actually those of the replacement function
-* You can manually update the `__name__` and __doc__` attributes your wrapper functions
+* You can manually update the `__name__` and ``__doc__` attributes your wrapper functions
 * The functools.wraps function can be used to create well-behavior wrappers in a simple and clear manner  
 * Multiple decorators can be applied to a function
-..* Where multiple decorators are applied, they are applied in reverse order
+* Where multiple decorators are applied, they are applied in reverse order
 * Decorators are a powerful tool, but make sure you don't overuse them or use them unnecessarily
 * There is technically no such thing as a decorator that takes extra arguments
-..* To parameterize decorators you need a function that creates decorators
+* To parameterize decorators you need a function that creates decorators
 * Local functions can create closures over objects in any number of enclosing scopes
